@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+ 
+     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+ 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="estilo.css">
+   
 
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
- <link rel="stylesheet" href="Css/estilosSide.css">
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="./Css/estilos.css">
+   {% load static %}
+   <link rel="stylesheet" type="text/css" href="{% static 'Css/estilosSide.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'Css/estilo.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'Css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'Css/estilos.css' %}">
+<script  type="text/javascript" src="{% static 'app.js' %}"></script>
+
+
 <style>
   nav ul {
         list-style: none;
@@ -70,7 +79,7 @@
       }
 
 </style>
-    <script src="app.js" async></script>
+
 
     
     <title>Sweetwater</title>
@@ -202,49 +211,49 @@
         <div class="contenedor-items">
             <div class="item">
                 <span class="titulo-item">Box Engasse</span>
-                <img src="img/Instrumentos/Guitarras elec/Black_Aged_Gloss_EIVYBAGBNH1_front.jpg" alt="" class="img-item">
+                <img src="{{' static/img/instrumentos/GE/Black_Aged_Gloss_EIVYBAGBNH1_front.jpg' }}" alt="" class="img-item">
                 <span class="precio-item">$15.000</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
                 <span class="titulo-item">English Horse</span>
-                <img src="img/Instrumentos/Guitarras elec/explorerBlack_Aged_Gloss_EIXYBAGBNH1_front.jpg" alt="" class="img-item">
+                <img src="{{' static/img/instrumentos/GE/V.jpg' }}" alt="" class="img-item">
                 <span class="precio-item">$25.000</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
                 <span class="titulo-item">Knock Nap</span>
-                <img src="img/Instrumentos/Guitarras elec/LESPC.jpg" alt="" class="img-item">
+                <img src="{{' static/img/instrumentos/GE/Explorerst.jpg' }}" alt="" class="img-item">
                 <span class="precio-item">$35.000</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
                 <span class="titulo-item">La Night</span>
-                <img src="img/Instrumentos/Guitarras elec/LESPJOE.jpg" alt="" class="img-item">
+                <img src="{{' static/img/instrumentos/GE/explorerBlack_Aged_Gloss_EIXYBAGBNH1_front.jpg' }}" alt="" class="img-item">
                 <span class="precio-item">$18.000</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
                 <span class="titulo-item">Silver All</span>
-                <img src="img/Instrumentos/Guitarras elec/LESPTAND.jpg" alt="" class="img-item">
+                <img src="{{' static/img/instrumentos/GE/LESPTAND50.jpg' }}" alt="" class="img-item">
                 <span class="precio-item">$32.000</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
                 <span class="titulo-item">Skin Glam</span>
-                <img src="img/Instrumentos/Guitarras elec/LESPTAND50.jpg" alt="" class="img-item">
+                <img src="{{' static/img/instrumentos/GE/LESPC.jpg' }}" alt="" class="img-item">
                 <span class="precio-item">$18.000</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
                 <span class="titulo-item">Midimix</span>
-                <img src="img/Instrumentos/Guitarras elec/V.jpg" alt="" class="img-item">
+                <img src="{{' static/img/instrumentos/GE/LESPTAND.jpg' }}" alt="" class="img-item">
                 <span class="precio-item">$54.000</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
                 <span class="titulo-item">Sir Blue</span>
-                <img src="img/Instrumentos/Guitarras elec/Explorerst.jpg" alt="" class="img-item">
+                <img src="{{' static/img/instrumentos/GE/LESPJOE.jpg' }}" alt="" class="img-item">
                 <span class="precio-item">$32.000</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
@@ -291,19 +300,76 @@
                 </div>
                  -->
             </div>
-            <div class="carrito-total">
-                <div class="fila">
+            <div class="carrito-total"  id="Total">
+                <div class="fila"  id="Total">
                     <strong>Tu Total</strong>
-                    <span class="carrito-precio-total">
+                    <span class="carrito-precio-total" id="Total" name="Total">
                         $120.000,00
                     </span>
                 </div>
-                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                {% csrf_token %}
+                <button type="submit"  class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
             </div>
         </div>
      
 
     </section>
+    <script>
+      $("#f1").submit( function() {
+      
+        $.ajax({
+          method:'POST',
+          url:'{% url "Registro" %}',
+          data:{
+            idventa: $('#ID').val(),
+            Total:  $('#Total').val(),
+            Fecha:  $('#Fecha').val(),
+            csrfmiddlewaretoken: '{{ csrf_token }}'
+      
+        },
+        success: function(response) {
+            alert('agregado correctamente');
+        },
+        });
+      
+      
+      } );
+      
+      </script>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3 id="Blanco">Añadir equipo</h3>
+      <p>
+
+        <div style="width: 100px;">
+
+        <form id="f1" name="f1" method="post">
+           
+            <br>
+             <p>Total<input name="Total" id="Total" /></p>
+               <br>
+               <br>
+               <p>Total<input name="Fecha" id="Fecha" /></p>
+                 <br>
+            
+            {% csrf_token %}
+                        <button type="submit">Enviar</button>
+        </form>
+        </div>
+        <div class="col-sm-4">
+          <h3>Listado de equipos</h3>
+    
+    
+                {% for Ventass in Ventas %}
+                <p>
+                  {{ Ventass.idventa}} {{ Ventass.Total}} {{ Ventass.Fecha}} <a href="eliminarEquipo/{{equipo.id}}"> ¿Eliminar?</a>
+                </p>
+    
+                {% endfor %}
+    
+        </div>
+
 </br>
 </br>   
 </br>   
